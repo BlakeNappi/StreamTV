@@ -1,0 +1,21 @@
+{# home.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+	This file creates the template for the Home page of the StreamTV Entertainment application.
+	It includes the header.twig.
+	It determines if a customer is logged in and displays the appropriate links on the page.
+#}
+
+{% include 'header.twig' with { 'pageTitle' : pageTitle}  %}
+
+<br><h3>
+  
+{% if user != '' %}
+	<a href="/streamtv/search">Search for a Show or Actor by Name</a><br><br>
+	<a href='/streamtv/queue'>View Your Queued Shows</a><br><br>
+	<a href="/streamtv/logout">Logout {{user}}</a><br><br>
+{% else %}
+	<a href="/streamtv/search">Search for a Show or Actor by Name</a><br><br>
+	<a href="/streamtv/register">Register as a New Customer</a><br><br>
+	<a href="/streamtv/login">Login to your Account</a><br><br>
+{% endif %}
+{% include 'footer.twig' %}

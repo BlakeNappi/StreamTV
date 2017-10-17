@@ -1,0 +1,25 @@
+{# watching.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+This	page	is	meant	to	be	the	placeholder	for	a	customer	actually	watching	an	episode	of	the	show.
+The	streamTV	system	limits	its	customers	to	watch	each	episode	only	once	per	day.		So	if	a	customer	
+attempts	to	watch	an	episode	again	in	the	same	day,	an	error	message should	display	on	the	page:
+#}
+
+{% include 'header.twig' %}
+<style>
+table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+</style>
+
+{% if result != '' %}
+<h1> Enjoy Watching Episode {{info[0].etitle}} of {{info[0].stitle}}</h1>
+<br><br>
+<img src = "../video_player.png" alt="Video Player">
+{% endif %}
+
+{% if result == '' %}
+<h2> Cannot watch Episode {{info[0].etitle}} of {{info[0].stitle}}</h2>
+<h3> Your account has already watched this episode today.</h3>
+{% endif %}
+
+{% include 'footer.twig' %}

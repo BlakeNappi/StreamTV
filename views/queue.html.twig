@@ -1,0 +1,41 @@
+{# queued.html.twig
+This	page	will	show	the	customer’s	name	and	email	address	along	with	the	title,	date	queued	and	an	option	
+to	list	watched	episodes	for	all	shows	in	the	customer’s	queue.
+	----------------------------BLAKE C. NAPPI-----------------------------
+#}
+
+{% include 'header.twig' %}
+<style>
+table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+</style>
+
+{% if queued %}
+<h1> Queued Shows for {{queued[0].fname}} {{queued[0].lname}}.</h1>
+
+<h2> {{queued[0].email}}</h2>
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>Date Queued</th>
+			<th>Watched Episodes</th>
+		</tr>
+	
+		{% for item in queued %}
+			<tr>
+				<td><a href="shows/{{item.showID}}">{{item.title}}</a></td>
+				<td>{{item.datequeued}}</td>
+				<td><a href="watched/{{item.showID}}">List</a></td>
+			</tr>
+		{% endfor %}
+	</table>
+	
+{% else %}
+	<h3> No queued shows</h3>	
+{% endif %}
+
+<br><br><br><br>
+<h2>WARNING - PERMENANT ACTION</h2>
+<h4><a href='delete_account/{{queued[0].custID}}'>Delete Account</a></h4>
+
+{% include 'footer.twig' %}

@@ -1,0 +1,50 @@
+{# search.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+The	user	will	enter	a	search	string	in	the	text	box	and	hit	Return
+For	each	matching	actor or	show	the	page	should	provide	a	link	to	display	more.
+#}
+
+{% include 'header.twig' %}
+<style>
+	table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+		.id { text-align: center; }
+		.name { text-align: center; }
+		.price { text-align: right; }
+</style>
+
+<h1>Search</h1>
+
+{{form_start(form)}}
+{{form_widget(form)}}
+{{form_end(form)}}
+
+{% if shows %}
+	<table>
+		<tr>
+		<th class="">TITLE</th>
+		</tr>
+	{% for item in shows %}
+		<tr>
+		<td class="name"> <a href="shows/{{item.showID}}" >{{ item.title }}</a></td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endif %}
+
+<br><br><br>
+
+{% if actors %}
+	<table>
+		<tr>
+		<th class="id">Name</th>
+		</tr>
+	{% for item in actors %}
+		<tr>
+		<td class="name"> <a href="actor/{{item.actorID}}">{{ item.fname }} {{ item.lname }}</a></td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endif %}
+
+{% include 'footer.twig' %}

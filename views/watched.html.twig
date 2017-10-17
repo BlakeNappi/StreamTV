@@ -1,0 +1,29 @@
+{# watched.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+The	Watched	Information	Page	displays	the	name	of	the	show	and	customer,	along	with	the	episode	title	and	
+date	watched	for	each	episode	the	show	that	the	customer	has	watched.
+#}
+
+{% include 'header.twig' %}
+<style>
+table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+</style>
+
+{% if result %}
+<h1> Episodes of {{result[0].stitle}} watched by {{result[0].fname}} {{result[0].lname}}</h1>
+
+	<table>
+		<tr>
+			<th class="title">Title</th>
+			<th class="date">Date Watched</th>
+		</tr>
+	
+	{% for item in result %}
+		<tr>
+			<td class="title"><a href="../episodeinfo/{{item.showID}}&{{item.episodeID}}">{{item.etitle}}</a></td>
+			<td class="date">{{item.datewatched}}</td>
+		</tr>
+	{% endfor %}
+{% endif %}
+{% include 'footer.twig' %}

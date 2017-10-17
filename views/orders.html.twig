@@ -1,0 +1,62 @@
+{# orders.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+
+	This file provides the template for displaying the order information for a specific 
+	customer.  It receives the information from index.php and creates a table for the
+	customers pending orders (undelivered) and a table for the customers delivered orders.
+	If either of these lists is empty, a message is displayed instead.
+#}
+
+{% include 'header.twig' %}
+<style>
+	table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+		.id { text-align: center; }
+		.name { text-align: center; }
+		.price { text-align: right; }
+</style>
+
+<h1>Orders</h1>
+
+{% if pending %}
+<h3>Your Pending Orders:</h3>
+	<table>
+		<tr>
+		<th class="tnum">Toy</th>
+		<th class="name">Date Ordered</th>
+		<th class="manuf">Manufacturer Name</th>
+		<!--Header for Manuf name -->
+		</tr>
+	{% for item in pending %}
+		<tr>
+		<td class="name"><a href="/toystore/item/{{ item.tnum }}">{{item.tname}}</a></td>
+		<td class="ordered">{{ item.date_ordered }}</td>
+		<td class="mname">{{item.mname}}  <!--display the Manuf name-->
+		</tr>
+	{% endfor %}
+	</table>
+{% else %}
+	<h3>No Pending Orders</h3>
+{% endif %}
+<br><br>
+{% if delivered %}
+<h3>Your Delivered Orders:</h3>
+	<table>
+		<tr>
+		<th class="tnum">Toy</th>
+		<th class="name">Date Delivered</th>
+		<th class="manuf">Manufacturer Name</th> <!--header for Manuf name-->
+		</tr>
+	{% for item in delivered %}
+		<tr>
+		<td class="name"><a href="/toystore/item/{{ item.tnum }}">{{item.tname}}</a></td>
+		<td class="ordered">{{ item.date_deliv }}</td>
+		<td class="mname">{{item.mname}}</td> <!--display the manuf name-->
+		</tr>
+	{% endfor %}
+	</table>
+{% else %}
+	<h3>No Delivered Orders</h3>
+{% endif %}
+
+{% include 'footer.twig' %}

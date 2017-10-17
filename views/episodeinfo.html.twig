@@ -1,0 +1,83 @@
+{# episodeinfo.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+When	a	customer	clicks	on	the	title	of	an	episode	from	the	Show	Episode	Page,	the	Episode	Information	page	
+should	appear.		This	page	shows	the	following	information	for	a	specific	episode	of	a	show:
+1. Show	title	(with	link	back	to	the	Show	Information	Page)
+2. Episode	title
+3. Original	air	date
+4. Main	cast	– with	link	for	each	actor	to	the	Actor	Information	Page	and	the	role	the	actor	played.
+5. Recurring	cast	– with	link	for	each	actor	to	the	Actor	Information	Page	and	the	role	the	actor	played.
+#}
+
+{% include 'header.twig' %}
+
+
+<style>
+	table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+		.id { text-align: center; }
+		.name { text-align: center; }
+		.price { text-align: right; }
+</style>
+
+	<br>
+	
+	<table>
+		<tr>
+			<th class="id">Show</th>
+			<td><a href="../shows/{{shows[0].showID}}">{{shows[0].title}}</a></td>
+		</tr>
+		<tr>
+			<th class="id">Title</th>
+			<td>{{episodes[0].title}}</td>
+		<tr>
+			<th class="id">Air date</th>
+			<td>{{episodes[0].airdate}}</td>
+		</tr>
+		
+	</table>
+	
+{% if user != '' %}
+	<h2><a href="../watch_episode/{{shows[0].showID}}&{{episodes[0].episodeID}}">Watch Episode</a></h2>
+{% endif %}
+
+{% if mc %}
+	<h2>Main Cast</h2>
+	<table>
+		<tr>
+			<th class="id">Actor</th>
+			<th class="id">Role</th>
+		</tr>
+		{% for item in mc %}
+			<tr>
+				<td><a href="../actor/{{item.anum}}">{{item.fname}} {{item.lname}}</a></td>
+				<td>{{item.role}}</td>
+			</tr>
+		{% endfor %}
+		
+	</table>
+{% endif %}
+
+<br><br>
+{% if rc %}
+	<h2>Guest Cast</h2>
+	<table>
+		<tr>
+			<th class="id">Actor</th>
+			<th class="id">Role</th>
+		</tr>
+		{% for item in rc %}
+			<tr>
+				<td><a href="../actor/{{item.anum}}">{{item.fname}} {{item.lname}}</a></td>
+				<td>{{item.role}}</td>
+			</tr>
+		{% endfor %}
+		
+	</table>
+{% endif %}
+
+
+
+
+
+{% include 'footer.twig' %}

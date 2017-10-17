@@ -1,0 +1,85 @@
+[28-Apr-2017 21:47:29 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[28-Apr-2017 21:49:41 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[28-Apr-2017 21:53:01 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[28-Apr-2017 22:11:42 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[28-Apr-2017 22:15:36 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[28-Apr-2017 22:16:16 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[28-Apr-2017 22:27:05 America/New_York] PHP Warning:  Header may not contain more than a single header, new line detected in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:05 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:05 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:05 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 340
+[28-Apr-2017 22:27:14 America/New_York] PHP Warning:  Header may not contain more than a single header, new line detected in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:14 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:14 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:14 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 340
+[28-Apr-2017 22:27:18 America/New_York] PHP Warning:  Header may not contain more than a single header, new line detected in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:18 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:18 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:27:18 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 340
+[28-Apr-2017 22:31:04 America/New_York] PHP Warning:  Header may not contain more than a single header, new line detected in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:31:04 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:31:04 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[28-Apr-2017 22:31:04 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 340
+[29-Apr-2017 11:14:53 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[29-Apr-2017 11:18:44 America/New_York] PHP Catchable fatal error:  Argument 1 passed to Symfony\Component\Form\FormRenderer::renderBlock() must be an instance of Symfony\Component\Form\FormView, array given, called in /home/blakenappi/silex-files/vendor/twig/twig/lib/Twig/Environment.php(403) : eval()'d code on line 36 and defined in /home/blakenappi/silex-files/vendor/symfony/form/FormRenderer.php on line 106
+[29-Apr-2017 11:36:23 America/New_York] PHP Fatal error:  Call to a member function createView() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 321
+[29-Apr-2017 10:52:14 America/Chicago] PHP Parse error:  syntax error, unexpected ''actorresults'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 326
+[29-Apr-2017 10:56:35 America/Chicago] PHP Parse error:  syntax error, unexpected ''actorresults'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 326
+[29-Apr-2017 11:03:30 America/Chicago] PHP Parse error:  syntax error, unexpected ''actorresults'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 326
+[29-Apr-2017 12:07:38 America/New_York] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/blakenappi/public_html/streamtv/index.php on line 105
+[29-Apr-2017 13:05:05 America/Chicago] PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 294
+[29-Apr-2017 13:05:08 America/Chicago] PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 294
+[29-Apr-2017 13:10:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 294
+[29-Apr-2017 13:10:41 America/Chicago] PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 294
+[29-Apr-2017 13:10:45 America/Chicago] PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 294
+[29-Apr-2017 13:10:53 America/Chicago] PHP Parse error:  syntax error, unexpected '$mc' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 294
+[29-Apr-2017 13:13:30 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/blakenappi/public_html/streamtv/index.php on line 297
+[29-Apr-2017 13:13:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/blakenappi/public_html/streamtv/index.php on line 297
+[30-Apr-2017 12:25:06 America/Chicago] PHP Parse error:  syntax error, unexpected ',' in /home/blakenappi/public_html/streamtv/index.php on line 451
+[30-Apr-2017 12:25:15 America/Chicago] PHP Parse error:  syntax error, unexpected '$showID' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 451
+[30-Apr-2017 13:52:21 America/New_York] PHP Warning:  Header may not contain more than a single header, new line detected in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[30-Apr-2017 13:52:21 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[30-Apr-2017 13:52:21 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 335
+[30-Apr-2017 13:52:21 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php:335) in /home/blakenappi/silex-files/vendor/symfony/http-foundation/Response.php on line 340
+[30-Apr-2017 17:25:18 America/New_York] PHP Fatal error:  Call to undefined function get() in /home/blakenappi/public_html/streamtv/index.php on line 518
+[30-Apr-2017 22:53:51 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 389
+[30-Apr-2017 22:54:40 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 390
+[30-Apr-2017 22:54:41 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 390
+[30-Apr-2017 22:56:03 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 390
+[30-Apr-2017 22:56:40 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 698
+[30-Apr-2017 22:57:22 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 22:57:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 22:57:23 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 22:57:24 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 22:57:45 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:17:12 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:17:30 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:17:58 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:18:13 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:18:28 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:18:29 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:18:43 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:18:43 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/blakenappi/public_html/streamtv/index.php on line 670
+[30-Apr-2017 23:20:16 America/Chicago] PHP Parse error:  syntax error, unexpected '$app' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 397
+[30-Apr-2017 23:20:22 America/Chicago] PHP Parse error:  syntax error, unexpected '$app' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 397
+[01-May-2017 13:22:44 America/Chicago] PHP Parse error:  syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/blakenappi/public_html/streamtv/index.php on line 336
+[01-May-2017 14:48:57 America/Chicago] PHP Parse error:  syntax error, unexpected ''curdate'' (T_CONSTANT_ENCAPSED_STRING) in /home/blakenappi/public_html/streamtv/index.php on line 701
+[01-May-2017 14:49:58 America/Chicago] PHP Parse error:  syntax error, unexpected '"curdate"' (T_CONSTANT_ENCAPSED_STRING) in /home/blakenappi/public_html/streamtv/index.php on line 701
+[01-May-2017 14:50:00 America/Chicago] PHP Parse error:  syntax error, unexpected '"curdate"' (T_CONSTANT_ENCAPSED_STRING) in /home/blakenappi/public_html/streamtv/index.php on line 701
+[01-May-2017 14:50:37 America/Chicago] PHP Parse error:  syntax error, unexpected 'curdate' (T_STRING) in /home/blakenappi/public_html/streamtv/index.php on line 701
+[01-May-2017 14:52:02 America/Chicago] PHP Parse error:  syntax error, unexpected '$currdate' (T_VARIABLE) in /home/blakenappi/public_html/streamtv/index.php on line 701
+[01-May-2017 15:56:56 America/Chicago] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/blakenappi/public_html/streamtv/index.php on line 751
+[01-May-2017 17:12:20 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:20 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:20 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:29 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:29 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:29 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:34 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:34 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:12:34 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:14:46 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:14:46 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 17:17:04 America/New_York] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /home/blakenappi/public_html/streamtv/index.php on line 106
+[01-May-2017 16:21:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/blakenappi/public_html/streamtv/index.php on line 750
+[01-May-2017 16:22:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/blakenappi/public_html/streamtv/index.php on line 750

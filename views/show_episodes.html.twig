@@ -1,0 +1,50 @@
+{# show_episode.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+When	a	customer	clicks	on	the	“All	Episodes”	link	on	the	Show	Information	Page,	the	Show	Episodes	page	
+should	appear.		This	page	gives	the	following	information	about	the	episodes	of	the	show	that	the	current	
+page	is	displaying:
+1. Season
+2. Title	of	the	episode	with	a	link	to	the	Episode	Information	Page.
+3. Air	date
+#}
+
+{% include 'header.twig' %}
+
+
+<style>
+	table, tr, th, td { border: 1px solid black !important; }
+	td, th {padding: .4em;}
+		.id { text-align: center; }
+		.name { text-align: center; }
+		.price { text-align: right; }
+</style>
+
+
+
+{% if shows %}
+
+	<h1>Episodes of <a href="../shows/{{shows[0].showID}}">{{shows[0].title}}</a></h1>
+
+	<br>
+	
+	<table>
+		<tr>
+			<th class="id">Season</th>
+			<th class="id">Title</th>
+			<th class="id">Air date</th>
+		</tr>
+		{% for item in episodes %}
+			<tr>
+				<td>{{item[4]}}</td>
+				<td><a href="../episodeinfo/{{item.showID}}&{{item.episodeID}}">{{item.title}}</a></td>
+				<td>{{item.airdate}}</td>
+			</tr>	
+		{% endfor %}
+	</table>
+
+{% endif %}
+
+
+
+
+{% include 'footer.twig' %}

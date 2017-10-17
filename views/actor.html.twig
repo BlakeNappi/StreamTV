@@ -1,0 +1,62 @@
+{# actorID.html.twig
+----------------------------BLAKE C. NAPPI-----------------------------
+Any	time	a	link	to	an	actors	name	is	chosen,	the	Actor	Information	Page	should	appear.	This	page	should	list	
+the	shows	that	the	actor	has	been	in	both	in	the	main	cast	and	in	the	recurring	cast.	Each	of	the	shows should	
+provide	a	link	to	the	Show	Information page for	that	show
+
+#}
+
+{% include 'header.twig' %}
+<style>
+table, tr, th, td { border: 1px solid black !important; }
+td, th {padding: .4em;}
+.id { text-align: center; }
+.name { text-align: center; }
+
+</style>
+
+
+
+
+
+{% if results %}
+<h1>Details for {{results[0].fname}} {{results[0].lname}}</h1>
+{% endif %}
+
+
+
+{% if mc %}
+<table>
+	<h3>Main Cast Roles for {{results[0].fname}} {{results[0].lname}}</h3>
+	<tr>
+		<th class="id">Title</th>
+		<th class="id">Role</th>
+	</tr>
+	{% for item in mc %}
+		<tr>
+			<td class="attr"><a href="../shows/{{item.showID}}">{{item.title}}</a></td>
+			<td class="value">{{item.role}}</td>
+		</tr>
+	{% endfor %}
+</table>
+
+{% endif %}
+<br><br>
+{% if rc %}
+	<h3>Guest Cast Roles for {{results[0].fname}} {{results[0].lname}}</h3>
+	<table>
+		<tr>
+			<th class="id">Title</th>
+			<th class="id">Role</th>
+		</tr>
+	{% for item in rc %}
+		<tr>
+			<td><a href="../shows/{{item.showID}}">{{item.title}}</a></td>
+			<td>{{item.role}}</td>
+		</tr>
+	{% endfor %}
+	</table>
+{% endif %}
+
+
+{% include 'footer.twig' %}
